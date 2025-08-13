@@ -218,7 +218,6 @@ impl Pricing for SP500 {
     }
 
     //customize the trait for sp500 using Yahoo Finance API endpoint
-    //Note: This endpoint may not always return expected data.
     fn fetch_price(&self) -> Result<f64, String> {
     let url = format!(
         "https://query2.finance.yahoo.com/v8/finance/chart/%5EGSPC?interval=1d&range=1d"
