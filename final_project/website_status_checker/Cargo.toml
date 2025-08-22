@@ -1,0 +1,11 @@
+[package]
+name = "website_status_checker"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ureq = "3.0.0-rc5"
+chrono = { version = "0.4", features = ["serde"] }                  
+serde = { version = "1.0", features = ["derive"] }                
+serde_json = "1.0"                                                 
+ctrlc = "3.2"   
